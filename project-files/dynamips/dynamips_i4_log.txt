@@ -1,0 +1,27 @@
+Jun 01 16:36:28.609 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 01 16:36:28.609 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 44810.
+Jun 01 16:36:28.626 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 01 16:36:28.627 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 01 16:36:28.627 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 01 16:36:28.628 HYPERVISOR: exec_cmd: vm create ESW4 4 c3745 
+Jun 01 16:36:28.628 VM: VM ESW4 created.
+Jun 01 16:36:28.628 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW4 5003 
+Jun 01 16:36:28.630 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW4 
+Jun 01 16:36:28.632 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 01 16:36:28.633 HYPERVISOR: exec_cmd: vm slot_add_binding ESW4 1 0 NM-16ESW 
+Jun 01 16:36:28.634 HYPERVISOR: exec_cmd: vm set_disk0 ESW4 1 
+Jun 01 16:36:28.635 HYPERVISOR: exec_cmd: vm set_ram ESW4 256 
+Jun 01 16:36:28.636 HYPERVISOR: exec_cmd: vm get_status ESW4 
+Jun 01 16:36:28.636 HYPERVISOR: exec_cmd: vm set_idle_pc ESW4 0x60b22a18 
+Jun 01 16:36:28.637 HYPERVISOR: exec_cmd: vm set_ios ESW4 /home/david/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 01 16:36:28.637 HYPERVISOR: exec_cmd: vm set_nvram ESW4 256 
+Jun 01 16:36:28.640 HYPERVISOR: exec_cmd: vm set_config ESW4 configs/i4_startup-config.cfg 
+Jun 01 16:39:36.786 HYPERVISOR: exec_cmd: vm rename ESW4 AveiroA2 
+Jun 01 16:40:59.504 HYPERVISOR: exec_cmd: vm extract_config AveiroA2 
+Jun 01 16:41:01.262 HYPERVISOR: exec_cmd: vm get_status AveiroA2 
+Jun 01 16:41:01.268 HYPERVISOR: exec_cmd: vm extract_config AveiroA2 
+Jun 01 16:41:01.273 HYPERVISOR: exec_cmd: vm delete AveiroA2 
+Jun 01 16:41:01.273 VM: VM AveiroA2 destroyed.
+Jun 01 16:41:01.276 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 01 16:41:01.377 HYPERVISOR: Stopped.
+Jun 01 16:41:01.377 GENERAL: reset done.
