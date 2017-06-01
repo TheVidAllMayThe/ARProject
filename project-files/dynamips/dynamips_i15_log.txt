@@ -1,0 +1,35 @@
+Jun 01 17:09:12.430 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 01 17:09:12.430 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49879.
+Jun 01 17:09:12.445 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 01 17:09:12.445 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 01 17:09:12.445 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 01 17:09:12.446 HYPERVISOR: exec_cmd: vm create R3 15 c7200 
+Jun 01 17:09:12.446 VM: VM R3 created.
+Jun 01 17:09:12.446 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5014 
+Jun 01 17:09:12.447 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Jun 01 17:09:12.447 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 01 17:09:12.447 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Jun 01 17:09:12.448 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Jun 01 17:09:12.448 HYPERVISOR: exec_cmd: vm set_ios R3 /home/david/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 01 17:09:12.449 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 01 17:09:12.449 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+Jun 01 17:09:12.450 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 01 17:09:12.450 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-2FE 
+Jun 01 17:09:12.451 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 01 17:09:12.451 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x601712a8 
+Jun 01 17:09:12.451 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Jun 01 17:09:12.452 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Jun 01 17:09:12.452 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 01 17:09:12.453 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-2FE-TX 
+Jun 01 17:09:12.454 HYPERVISOR: exec_cmd: vm set_config R3 configs/i15_startup-config.cfg 
+Jun 01 17:09:26.529 HYPERVISOR: exec_cmd: nio create_udp udp-0f8f4797-4b8d-4959-b44b-aa5cb45692fb 10040 127.0.0.1 10041 
+Jun 01 17:09:26.530 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-0f8f4797-4b8d-4959-b44b-aa5cb45692fb 
+Jun 01 17:09:26.532 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 01 17:09:30.816 HYPERVISOR: exec_cmd: nio create_udp udp-2e905b4c-9c41-4ccb-8c56-dd15abb2e639 10043 127.0.0.1 10042 
+Jun 01 17:09:30.818 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-2e905b4c-9c41-4ccb-8c56-dd15abb2e639 
+Jun 01 17:09:30.819 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 01 17:10:28.490 HYPERVISOR: exec_cmd: nio create_udp udp-1823e0df-1ddc-4fad-a296-83802e38da42 10049 127.0.0.1 10048 
+Jun 01 17:10:28.494 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-1823e0df-1ddc-4fad-a296-83802e38da42 
+Jun 01 17:10:28.495 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 01 17:12:35.414 HYPERVISOR: exec_cmd: vm extract_config R3 
+Jun 01 17:12:38.360 HYPERVISOR: exec_cmd: vm extract_config R3 

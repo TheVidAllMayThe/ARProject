@@ -1,27 +1,33 @@
-Jun 01 16:36:25.913 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
-Jun 01 16:36:25.913 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58785.
-Jun 01 16:36:25.932 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 01 16:36:25.933 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
-Jun 01 16:36:25.933 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
-Jun 01 16:36:25.933 HYPERVISOR: exec_cmd: vm create ESW3 3 c3745 
-Jun 01 16:36:25.933 VM: VM ESW3 created.
-Jun 01 16:36:25.934 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW3 5002 
-Jun 01 16:36:25.934 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW3 
-Jun 01 16:36:25.934 HYPERVISOR: exec_cmd: vm get_status ESW3 
-Jun 01 16:36:25.935 HYPERVISOR: exec_cmd: vm slot_add_binding ESW3 1 0 NM-16ESW 
-Jun 01 16:36:25.935 HYPERVISOR: exec_cmd: vm set_disk0 ESW3 1 
-Jun 01 16:36:25.936 HYPERVISOR: exec_cmd: vm set_ram ESW3 256 
-Jun 01 16:36:25.936 HYPERVISOR: exec_cmd: vm get_status ESW3 
-Jun 01 16:36:25.937 HYPERVISOR: exec_cmd: vm set_idle_pc ESW3 0x60b22a18 
-Jun 01 16:36:25.937 HYPERVISOR: exec_cmd: vm set_ios ESW3 /home/david/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
-Jun 01 16:36:25.938 HYPERVISOR: exec_cmd: vm set_nvram ESW3 256 
-Jun 01 16:36:25.938 HYPERVISOR: exec_cmd: vm set_config ESW3 configs/i3_startup-config.cfg 
-Jun 01 16:39:30.957 HYPERVISOR: exec_cmd: vm rename ESW3 AveiroA1 
-Jun 01 16:40:59.507 HYPERVISOR: exec_cmd: vm extract_config AveiroA1 
-Jun 01 16:41:01.263 HYPERVISOR: exec_cmd: vm get_status AveiroA1 
-Jun 01 16:41:01.270 HYPERVISOR: exec_cmd: vm extract_config AveiroA1 
-Jun 01 16:41:01.274 HYPERVISOR: exec_cmd: vm delete AveiroA1 
-Jun 01 16:41:01.274 VM: VM AveiroA1 destroyed.
-Jun 01 16:41:01.278 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 01 16:41:01.694 HYPERVISOR: Stopped.
-Jun 01 16:41:01.694 GENERAL: reset done.
+Jun 01 17:03:32.100 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 01 17:03:32.100 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 32804.
+Jun 01 17:03:32.114 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 01 17:03:32.115 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 01 17:03:32.115 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 01 17:03:32.116 HYPERVISOR: exec_cmd: vm create AveiroA1 3 c3745 
+Jun 01 17:03:32.116 VM: VM AveiroA1 created.
+Jun 01 17:03:32.117 HYPERVISOR: exec_cmd: vm set_con_tcp_port AveiroA1 5002 
+Jun 01 17:03:32.118 HYPERVISOR: exec_cmd: c3745 get_mac_addr AveiroA1 
+Jun 01 17:03:32.118 HYPERVISOR: exec_cmd: vm set_disk0 AveiroA1 1 
+Jun 01 17:03:32.119 HYPERVISOR: exec_cmd: vm set_ram AveiroA1 256 
+Jun 01 17:03:32.120 HYPERVISOR: exec_cmd: c3745 set_mac_addr AveiroA1 c403.32f2.0000 
+Jun 01 17:03:32.121 HYPERVISOR: exec_cmd: vm set_nvram AveiroA1 256 
+Jun 01 17:03:32.122 HYPERVISOR: exec_cmd: vm get_status AveiroA1 
+Jun 01 17:03:32.122 HYPERVISOR: exec_cmd: vm set_idle_pc AveiroA1 0x60b22a18 
+Jun 01 17:03:32.127 HYPERVISOR: exec_cmd: vm get_status AveiroA1 
+Jun 01 17:03:32.131 HYPERVISOR: exec_cmd: vm slot_add_binding AveiroA1 1 0 NM-16ESW 
+Jun 01 17:03:32.134 HYPERVISOR: exec_cmd: vm set_ios AveiroA1 /home/david/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 01 17:03:32.137 HYPERVISOR: exec_cmd: vm set_config AveiroA1 configs/i3_startup-config.cfg 
+Jun 01 17:03:40.810 HYPERVISOR: exec_cmd: nio create_udp udp-59d9e994-5989-4865-a35c-17600f765e8f 10000 127.0.0.1 10001 
+Jun 01 17:03:40.811 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AveiroA1 1 0 udp-59d9e994-5989-4865-a35c-17600f765e8f 
+Jun 01 17:03:40.812 HYPERVISOR: exec_cmd: vm get_status AveiroA1 
+Jun 01 17:04:06.564 HYPERVISOR: exec_cmd: nio create_udp udp-eb99f4c8-499f-4f7f-9d36-78e2dbcd8442 10005 127.0.0.1 10004 
+Jun 01 17:04:06.566 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AveiroA1 1 1 udp-eb99f4c8-499f-4f7f-9d36-78e2dbcd8442 
+Jun 01 17:04:06.567 HYPERVISOR: exec_cmd: vm get_status AveiroA1 
+Jun 01 17:04:11.975 HYPERVISOR: exec_cmd: vm get_status AveiroA1 
+Jun 01 17:04:11.976 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding AveiroA1 1 1 
+Jun 01 17:04:11.983 HYPERVISOR: exec_cmd: nio delete udp-eb99f4c8-499f-4f7f-9d36-78e2dbcd8442 
+Jun 01 17:04:25.461 HYPERVISOR: exec_cmd: nio create_udp udp-221fb248-f72e-4ce4-82c1-a0ead7c0e29b 10003 127.0.0.1 10002 
+Jun 01 17:04:25.462 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AveiroA1 1 1 udp-221fb248-f72e-4ce4-82c1-a0ead7c0e29b 
+Jun 01 17:04:25.463 HYPERVISOR: exec_cmd: vm get_status AveiroA1 
+Jun 01 17:12:35.412 HYPERVISOR: exec_cmd: vm extract_config AveiroA1 
+Jun 01 17:12:38.359 HYPERVISOR: exec_cmd: vm extract_config AveiroA1 

@@ -1,0 +1,36 @@
+Jun 01 17:10:10.328 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 01 17:10:10.328 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41306.
+Jun 01 17:10:10.343 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 01 17:10:10.343 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 01 17:10:10.343 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 01 17:10:10.343 HYPERVISOR: exec_cmd: vm create R5 18 c7200 
+Jun 01 17:10:10.343 VM: VM R5 created.
+Jun 01 17:10:10.344 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5017 
+Jun 01 17:10:10.344 HYPERVISOR: exec_cmd: c7200 get_mac_addr R5 
+Jun 01 17:10:10.345 HYPERVISOR: exec_cmd: vm get_status R5 
+Jun 01 17:10:10.345 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-FE 
+Jun 01 17:10:10.346 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Jun 01 17:10:10.346 HYPERVISOR: exec_cmd: vm set_ios R5 /home/david/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 01 17:10:10.347 HYPERVISOR: exec_cmd: vm get_status R5 
+Jun 01 17:10:10.347 HYPERVISOR: exec_cmd: vm slot_remove_binding R5 0 0 
+Jun 01 17:10:10.348 HYPERVISOR: exec_cmd: vm get_status R5 
+Jun 01 17:10:10.348 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-2FE 
+Jun 01 17:10:10.348 HYPERVISOR: exec_cmd: vm get_status R5 
+Jun 01 17:10:10.349 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x601712a8 
+Jun 01 17:10:10.349 HYPERVISOR: exec_cmd: vm set_nvram R5 512 
+Jun 01 17:10:10.350 HYPERVISOR: exec_cmd: vm set_ram R5 512 
+Jun 01 17:10:10.350 HYPERVISOR: exec_cmd: vm get_status R5 
+Jun 01 17:10:10.350 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 PA-2FE-TX 
+Jun 01 17:10:10.351 HYPERVISOR: exec_cmd: vm set_config R5 configs/i18_startup-config.cfg 
+Jun 01 17:10:20.998 HYPERVISOR: exec_cmd: vm rename R5 ISPUS 
+Jun 01 17:10:28.493 HYPERVISOR: exec_cmd: nio create_udp udp-976f2333-36f7-4431-b91f-cf5db929df3d 10048 127.0.0.1 10049 
+Jun 01 17:10:28.495 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISPUS 0 0 udp-976f2333-36f7-4431-b91f-cf5db929df3d 
+Jun 01 17:10:28.496 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 01 17:10:35.676 HYPERVISOR: exec_cmd: nio create_udp udp-14dd1f31-79ec-4d5c-bd17-66dc10b92b6d 10051 127.0.0.1 10050 
+Jun 01 17:10:35.678 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISPUS 0 1 udp-14dd1f31-79ec-4d5c-bd17-66dc10b92b6d 
+Jun 01 17:10:35.679 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 01 17:11:16.133 HYPERVISOR: exec_cmd: nio create_udp udp-96fa84f5-8674-45bb-904a-745237819ee3 10059 127.0.0.1 10058 
+Jun 01 17:11:16.134 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISPUS 1 0 udp-96fa84f5-8674-45bb-904a-745237819ee3 
+Jun 01 17:11:16.134 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 01 17:12:35.417 HYPERVISOR: exec_cmd: vm extract_config ISPUS 
+Jun 01 17:12:38.364 HYPERVISOR: exec_cmd: vm extract_config ISPUS 

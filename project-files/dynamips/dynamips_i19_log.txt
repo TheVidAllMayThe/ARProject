@@ -1,0 +1,16 @@
+Jun 01 17:11:06.907 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 01 17:11:06.907 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59263.
+Jun 01 17:11:06.923 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 01 17:11:06.924 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 01 17:11:06.924 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 01 17:11:06.924 HYPERVISOR: exec_cmd: ethsw create SW1 
+Jun 01 17:11:10.990 HYPERVISOR: exec_cmd: nio create_udp udp-16baa1a9-c989-4781-af08-ea147ee72171 10057 127.0.0.1 10056 
+Jun 01 17:11:10.991 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-16baa1a9-c989-4781-af08-ea147ee72171 
+Jun 01 17:11:11.003 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-16baa1a9-c989-4781-af08-ea147ee72171 1 
+Jun 01 17:11:16.129 HYPERVISOR: exec_cmd: nio create_udp udp-8e8e4aa0-f558-476f-9b5d-89bb4af41594 10058 127.0.0.1 10059 
+Jun 01 17:11:16.133 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-8e8e4aa0-f558-476f-9b5d-89bb4af41594 
+Jun 01 17:11:16.146 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-8e8e4aa0-f558-476f-9b5d-89bb4af41594 1 
+Jun 01 17:11:35.045 HYPERVISOR: exec_cmd: ethsw rename SW1 Internet em gera 
+Jun 01 17:11:37.691 HYPERVISOR: exec_cmd: ethsw rename Internet em gera Internet em geral 
+Jun 01 17:11:47.887 HYPERVISOR: exec_cmd: ethsw rename Internet em geral Gatos 
+Jun 01 17:12:11.579 HYPERVISOR: exec_cmd: ethsw rename Gatos Cats and porn 

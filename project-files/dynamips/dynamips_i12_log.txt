@@ -1,27 +1,33 @@
-Jun 01 16:37:55.397 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
-Jun 01 16:37:55.397 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53713.
-Jun 01 16:37:55.418 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 01 16:37:55.418 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
-Jun 01 16:37:55.418 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
-Jun 01 16:37:55.419 HYPERVISOR: exec_cmd: vm create ESW12 12 c3745 
-Jun 01 16:37:55.419 VM: VM ESW12 created.
-Jun 01 16:37:55.420 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW12 5011 
-Jun 01 16:37:55.421 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW12 
-Jun 01 16:37:55.421 HYPERVISOR: exec_cmd: vm get_status ESW12 
-Jun 01 16:37:55.422 HYPERVISOR: exec_cmd: vm slot_add_binding ESW12 1 0 NM-16ESW 
-Jun 01 16:37:55.423 HYPERVISOR: exec_cmd: vm set_disk0 ESW12 1 
-Jun 01 16:37:55.423 HYPERVISOR: exec_cmd: vm set_ram ESW12 256 
-Jun 01 16:37:55.424 HYPERVISOR: exec_cmd: vm get_status ESW12 
-Jun 01 16:37:55.424 HYPERVISOR: exec_cmd: vm set_idle_pc ESW12 0x60b22a18 
-Jun 01 16:37:55.425 HYPERVISOR: exec_cmd: vm set_ios ESW12 /home/david/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
-Jun 01 16:37:55.426 HYPERVISOR: exec_cmd: vm set_nvram ESW12 256 
-Jun 01 16:37:55.427 HYPERVISOR: exec_cmd: vm set_config ESW12 configs/i12_startup-config.cfg 
-Jun 01 16:39:17.310 HYPERVISOR: exec_cmd: vm rename ESW12 Chicago12 
-Jun 01 16:40:59.508 HYPERVISOR: exec_cmd: vm extract_config Chicago12 
-Jun 01 16:41:01.264 HYPERVISOR: exec_cmd: vm get_status Chicago12 
-Jun 01 16:41:01.270 HYPERVISOR: exec_cmd: vm extract_config Chicago12 
-Jun 01 16:41:01.274 HYPERVISOR: exec_cmd: vm delete Chicago12 
-Jun 01 16:41:01.274 VM: VM Chicago12 destroyed.
-Jun 01 16:41:01.278 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 01 16:41:01.583 HYPERVISOR: Stopped.
-Jun 01 16:41:01.583 GENERAL: reset done.
+Jun 01 17:03:32.392 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 01 17:03:32.392 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47587.
+Jun 01 17:03:32.432 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 01 17:03:32.432 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 01 17:03:32.432 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 01 17:03:32.433 HYPERVISOR: exec_cmd: vm create Chicago12 12 c3745 
+Jun 01 17:03:32.433 VM: VM Chicago12 created.
+Jun 01 17:03:32.433 HYPERVISOR: exec_cmd: vm set_con_tcp_port Chicago12 5011 
+Jun 01 17:03:32.434 HYPERVISOR: exec_cmd: c3745 get_mac_addr Chicago12 
+Jun 01 17:03:32.434 HYPERVISOR: exec_cmd: vm set_disk0 Chicago12 1 
+Jun 01 17:03:32.435 HYPERVISOR: exec_cmd: vm set_ram Chicago12 256 
+Jun 01 17:03:32.436 HYPERVISOR: exec_cmd: c3745 set_mac_addr Chicago12 c40c.3aeb.0000 
+Jun 01 17:03:32.438 HYPERVISOR: exec_cmd: vm set_nvram Chicago12 256 
+Jun 01 17:03:32.439 HYPERVISOR: exec_cmd: vm get_status Chicago12 
+Jun 01 17:03:32.440 HYPERVISOR: exec_cmd: vm set_idle_pc Chicago12 0x60b22a18 
+Jun 01 17:03:32.441 HYPERVISOR: exec_cmd: vm get_status Chicago12 
+Jun 01 17:03:32.441 HYPERVISOR: exec_cmd: vm slot_add_binding Chicago12 1 0 NM-16ESW 
+Jun 01 17:03:32.442 HYPERVISOR: exec_cmd: vm set_ios Chicago12 /home/david/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 01 17:03:32.442 HYPERVISOR: exec_cmd: vm set_config Chicago12 configs/i12_startup-config.cfg 
+Jun 01 17:08:58.890 HYPERVISOR: exec_cmd: nio create_udp udp-c3248153-c4f1-42d1-b6ab-b6f5a22fe72a 10034 127.0.0.1 10035 
+Jun 01 17:08:58.894 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago12 1 0 udp-c3248153-c4f1-42d1-b6ab-b6f5a22fe72a 
+Jun 01 17:08:58.895 HYPERVISOR: exec_cmd: vm get_status Chicago12 
+Jun 01 17:09:08.685 HYPERVISOR: exec_cmd: nio create_udp udp-c91cb797-65fa-4979-a7a9-f006c7c27101 10038 127.0.0.1 10039 
+Jun 01 17:09:08.690 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago12 1 1 udp-c91cb797-65fa-4979-a7a9-f006c7c27101 
+Jun 01 17:09:08.691 HYPERVISOR: exec_cmd: vm get_status Chicago12 
+Jun 01 17:09:30.813 HYPERVISOR: exec_cmd: nio create_udp udp-377ec681-cffc-439b-988a-4e70bcda0fee 10042 127.0.0.1 10043 
+Jun 01 17:09:30.817 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago12 0 0 udp-377ec681-cffc-439b-988a-4e70bcda0fee 
+Jun 01 17:09:30.818 HYPERVISOR: exec_cmd: vm get_status Chicago12 
+Jun 01 17:09:42.909 HYPERVISOR: exec_cmd: nio create_udp udp-fde6b8b2-e4b0-4e49-98d7-e907c6951736 10046 127.0.0.1 10047 
+Jun 01 17:09:42.910 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago12 0 1 udp-fde6b8b2-e4b0-4e49-98d7-e907c6951736 
+Jun 01 17:09:42.911 HYPERVISOR: exec_cmd: vm get_status Chicago12 
+Jun 01 17:12:35.414 HYPERVISOR: exec_cmd: vm extract_config Chicago12 
+Jun 01 17:12:38.361 HYPERVISOR: exec_cmd: vm extract_config Chicago12 
