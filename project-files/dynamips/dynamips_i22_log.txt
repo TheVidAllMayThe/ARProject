@@ -1,0 +1,31 @@
+Jun 13 17:38:44.133 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 13 17:38:44.133 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56149.
+Jun 13 17:38:44.147 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 17:38:44.148 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 13 17:38:44.148 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 13 17:38:44.148 HYPERVISOR: exec_cmd: vm create R4 20 c7200 
+Jun 13 17:38:44.148 VM: VM R4 created.
+Jun 13 17:38:44.149 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5009 
+Jun 13 17:38:44.149 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Jun 13 17:38:44.149 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:38:44.150 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Jun 13 17:38:44.150 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Jun 13 17:38:44.151 HYPERVISOR: exec_cmd: vm set_ios R4 /home/david/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jun 13 17:38:44.152 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Jun 13 17:38:44.152 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:38:44.153 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60893300 
+Jun 13 17:38:44.153 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:38:44.153 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-2FE-TX 
+Jun 13 17:38:44.154 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Jun 13 17:38:44.154 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:38:44.155 HYPERVISOR: exec_cmd: vm slot_remove_binding R4 0 0 
+Jun 13 17:38:44.155 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:38:44.156 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-2FE 
+Jun 13 17:38:44.156 HYPERVISOR: exec_cmd: vm set_config R4 configs/i20_startup-config.cfg 
+Jun 13 17:38:48.004 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:38:48.004 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 13 17:38:48.005 HYPERVISOR: exec_cmd: vm delete R4 
+Jun 13 17:38:48.005 VM: VM R4 destroyed.
+Jun 13 17:38:48.005 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 17:38:48.149 HYPERVISOR: Stopped.
+Jun 13 17:38:48.149 GENERAL: reset done.

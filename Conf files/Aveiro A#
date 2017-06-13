@@ -1,0 +1,23 @@
+vlan database
+vlan 1
+vlan 2 
+vlan 4
+exit
+conf t
+ip routing
+in f1/2
+switchport mode trunk
+switchport trunk encapsulation dot1q
+no sh
+in vlan 1
+ip add 10.0.0.251 255.255.255.0
+ipv6 add 2002:A:A:0::251/64
+no sh
+in vlan 2
+ip add 10.0.16.253 255.255.255.0
+ipv6 add 2002:A:A:10::253/64
+no sh
+in vlan 4
+ip add 10.0.32.253 255.255.255.0
+ipv6 add 2002:A:A:20::253/64
+no sh

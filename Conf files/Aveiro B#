@@ -1,0 +1,17 @@
+conf t
+interface f0/0
+ip address 192.168.100.254 255.255.255.0
+ip ospf 10 area 0
+no sh
+interface f0/1
+ip address 192.168.101.254 255.255.255.0
+ip ospf 10 area 0
+no sh
+interface vlan 1
+ip address 192.168.0.254 255.255.252.0
+ip ospf 10 area 0
+no sh
+interface fastEthernet 1/15
+switchport mode trunk
+switchport trunk encapsulation dot1q 
+no sh

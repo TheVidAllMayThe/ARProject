@@ -1,0 +1,10 @@
+Jun 13 18:40:23.395 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 13 18:40:23.395 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 40770.
+Jun 13 18:40:23.402 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 18:40:23.403 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 13 18:40:23.403 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 13 18:40:23.404 HYPERVISOR: exec_cmd: ethsw create SW2 
+Jun 13 18:40:58.245 HYPERVISOR: exec_cmd: ethsw delete SW2 
+Jun 13 18:40:58.247 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 18:40:58.423 HYPERVISOR: Stopped.
+Jun 13 18:40:58.423 GENERAL: reset done.

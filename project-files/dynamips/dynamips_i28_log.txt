@@ -1,0 +1,29 @@
+Jun 13 17:41:45.617 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 13 17:41:45.617 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 45832.
+Jun 13 17:41:45.634 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 17:41:45.634 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 13 17:41:45.634 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 13 17:41:45.635 HYPERVISOR: exec_cmd: ethsw create SW5 
+Jun 13 17:41:49.679 HYPERVISOR: exec_cmd: nio create_udp udp-c17d745a-f6fd-4e5c-93d0-c4ed8e5eb03f 10056 127.0.0.1 10057 
+Jun 13 17:41:49.684 HYPERVISOR: exec_cmd: ethsw add_nio SW5 udp-c17d745a-f6fd-4e5c-93d0-c4ed8e5eb03f 
+Jun 13 17:41:49.692 HYPERVISOR: exec_cmd: ethsw set_access_port SW5 udp-c17d745a-f6fd-4e5c-93d0-c4ed8e5eb03f 1 
+Jun 13 17:41:53.026 HYPERVISOR: exec_cmd: nio create_udp udp-88fe3178-bfce-4936-86e4-c3bccc5fe8cd 10066 127.0.0.1 10067 
+Jun 13 17:41:53.030 HYPERVISOR: exec_cmd: ethsw add_nio SW5 udp-88fe3178-bfce-4936-86e4-c3bccc5fe8cd 
+Jun 13 17:41:53.046 HYPERVISOR: exec_cmd: ethsw set_access_port SW5 udp-88fe3178-bfce-4936-86e4-c3bccc5fe8cd 1 
+Jun 13 17:55:18.208 HYPERVISOR: exec_cmd: nio create_udp udp-c892ac9c-3954-4968-98c4-a2c24948484e 10074 127.0.0.1 10075 
+Jun 13 17:55:18.219 HYPERVISOR: exec_cmd: ethsw add_nio SW5 udp-c892ac9c-3954-4968-98c4-a2c24948484e 
+Jun 13 17:55:18.226 HYPERVISOR: exec_cmd: ethsw set_access_port SW5 udp-c892ac9c-3954-4968-98c4-a2c24948484e 1 
+Jun 13 17:55:20.824 HYPERVISOR: exec_cmd: nio create_udp udp-8edf409f-14d2-4ba2-8995-e183ce5c8217 10076 127.0.0.1 10077 
+Jun 13 17:55:20.833 HYPERVISOR: exec_cmd: ethsw add_nio SW5 udp-8edf409f-14d2-4ba2-8995-e183ce5c8217 
+Jun 13 17:55:20.835 HYPERVISOR: exec_cmd: ethsw set_access_port SW5 udp-8edf409f-14d2-4ba2-8995-e183ce5c8217 1 
+Jun 13 17:57:16.275 HYPERVISOR: exec_cmd: nio create_udp udp-ecd698f4-f9cf-4701-9847-79aa7787f17e 10081 127.0.0.1 10080 
+Jun 13 17:57:16.275 HYPERVISOR: exec_cmd: ethsw add_nio SW5 udp-ecd698f4-f9cf-4701-9847-79aa7787f17e 
+Jun 13 17:57:16.288 HYPERVISOR: exec_cmd: ethsw set_access_port SW5 udp-ecd698f4-f9cf-4701-9847-79aa7787f17e 1 
+Jun 13 18:08:59.073 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW5 udp-c17d745a-f6fd-4e5c-93d0-c4ed8e5eb03f 1 
+Jun 13 18:08:59.074 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW5 udp-88fe3178-bfce-4936-86e4-c3bccc5fe8cd 1 
+Jun 13 18:08:59.075 HYPERVISOR: exec_cmd: ethsw set_access_port SW5 udp-8edf409f-14d2-4ba2-8995-e183ce5c8217 3 
+Jun 13 18:08:59.075 HYPERVISOR: exec_cmd: ethsw set_access_port SW5 udp-ecd698f4-f9cf-4701-9847-79aa7787f17e 5 
+Jun 13 18:49:44.682 HYPERVISOR: exec_cmd: ethsw delete SW5 
+Jun 13 18:49:44.770 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 18:49:45.058 HYPERVISOR: Stopped.
+Jun 13 18:49:45.058 GENERAL: reset done.

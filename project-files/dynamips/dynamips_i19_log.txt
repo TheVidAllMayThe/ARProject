@@ -1,16 +1,19 @@
-Jun 01 17:11:06.907 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
-Jun 01 17:11:06.907 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59263.
-Jun 01 17:11:06.923 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 01 17:11:06.924 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
-Jun 01 17:11:06.924 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
-Jun 01 17:11:06.924 HYPERVISOR: exec_cmd: ethsw create SW1 
-Jun 01 17:11:10.990 HYPERVISOR: exec_cmd: nio create_udp udp-16baa1a9-c989-4781-af08-ea147ee72171 10057 127.0.0.1 10056 
-Jun 01 17:11:10.991 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-16baa1a9-c989-4781-af08-ea147ee72171 
-Jun 01 17:11:11.003 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-16baa1a9-c989-4781-af08-ea147ee72171 1 
-Jun 01 17:11:16.129 HYPERVISOR: exec_cmd: nio create_udp udp-8e8e4aa0-f558-476f-9b5d-89bb4af41594 10058 127.0.0.1 10059 
-Jun 01 17:11:16.133 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-8e8e4aa0-f558-476f-9b5d-89bb4af41594 
-Jun 01 17:11:16.146 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-8e8e4aa0-f558-476f-9b5d-89bb4af41594 1 
-Jun 01 17:11:35.045 HYPERVISOR: exec_cmd: ethsw rename SW1 Internet em gera 
-Jun 01 17:11:37.691 HYPERVISOR: exec_cmd: ethsw rename Internet em gera Internet em geral 
-Jun 01 17:11:47.887 HYPERVISOR: exec_cmd: ethsw rename Internet em geral Gatos 
-Jun 01 17:12:11.579 HYPERVISOR: exec_cmd: ethsw rename Gatos Cats and porn 
+Jun 13 17:06:37.806 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 13 17:06:37.806 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57730.
+Jun 13 17:06:37.850 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 17:06:37.852 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 13 17:06:37.852 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 13 17:06:37.853 HYPERVISOR: exec_cmd: ethsw create Cats and porn 
+Jun 13 17:06:39.015 HYPERVISOR: exec_cmd: nio create_udp udp-f5b5c1c1-6cd0-46be-81d6-7391d505ff42 10052 127.0.0.1 10053 
+Jun 13 17:06:39.016 HYPERVISOR: exec_cmd: ethsw add_nio Cats and porn udp-f5b5c1c1-6cd0-46be-81d6-7391d505ff42 
+Jun 13 17:06:39.039 HYPERVISOR: exec_cmd: ethsw set_access_port Cats and porn udp-f5b5c1c1-6cd0-46be-81d6-7391d505ff42 1 
+Jun 13 17:06:39.071 HYPERVISOR: exec_cmd: nio create_udp udp-834d1879-a717-4af4-be3d-d62c3fe51abe 10059 127.0.0.1 10058 
+Jun 13 17:06:39.086 HYPERVISOR: exec_cmd: ethsw add_nio Cats and porn udp-834d1879-a717-4af4-be3d-d62c3fe51abe 
+Jun 13 17:06:39.093 HYPERVISOR: exec_cmd: ethsw set_access_port Cats and porn udp-834d1879-a717-4af4-be3d-d62c3fe51abe 1 
+Jun 13 17:10:59.620 HYPERVISOR: exec_cmd: nio create_udp udp-2340dba8-9a27-467d-8e6d-bc81e725d547 10064 127.0.0.1 10065 
+Jun 13 17:10:59.624 HYPERVISOR: exec_cmd: ethsw add_nio Cats and porn udp-2340dba8-9a27-467d-8e6d-bc81e725d547 
+Jun 13 17:10:59.632 HYPERVISOR: exec_cmd: ethsw set_access_port Cats and porn udp-2340dba8-9a27-467d-8e6d-bc81e725d547 1 
+Jun 13 18:49:44.683 HYPERVISOR: exec_cmd: ethsw delete Cats and porn 
+Jun 13 18:49:44.738 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 18:49:45.198 HYPERVISOR: Stopped.
+Jun 13 18:49:45.198 GENERAL: reset done.

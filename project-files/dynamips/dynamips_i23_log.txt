@@ -1,0 +1,72 @@
+Jun 13 17:38:51.918 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 13 17:38:51.919 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54657.
+Jun 13 17:38:51.936 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 17:38:51.937 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 13 17:38:51.937 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 13 17:38:51.938 HYPERVISOR: exec_cmd: vm create R4 21 c7200 
+Jun 13 17:38:51.938 VM: VM R4 created.
+Jun 13 17:38:51.938 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5009 
+Jun 13 17:38:51.939 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Jun 13 17:38:51.939 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:38:51.940 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Jun 13 17:38:51.940 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Jun 13 17:38:51.941 HYPERVISOR: exec_cmd: vm set_ios R4 /home/david/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 13 17:38:51.942 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Jun 13 17:38:51.943 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:38:51.943 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x632f1b0c 
+Jun 13 17:38:51.944 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:38:51.944 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-2FE-TX 
+Jun 13 17:38:51.945 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Jun 13 17:38:51.946 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:38:51.947 HYPERVISOR: exec_cmd: vm slot_remove_binding R4 0 0 
+Jun 13 17:38:51.948 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:38:51.950 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-2FE 
+Jun 13 17:38:51.954 HYPERVISOR: exec_cmd: vm set_config R4 configs/i21_startup-config.cfg 
+Jun 13 17:38:57.019 HYPERVISOR: exec_cmd: nio create_udp udp-910fc76f-11a3-4552-b1d5-7f6f2c9b1a6c 10026 127.0.0.1 10027 
+Jun 13 17:38:57.020 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-910fc76f-11a3-4552-b1d5-7f6f2c9b1a6c 
+Jun 13 17:38:57.021 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:39:22.651 HYPERVISOR: exec_cmd: nio create_udp udp-07419ef7-bd32-468d-a505-1179b31a2047 10030 127.0.0.1 10031 
+Jun 13 17:39:22.658 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-07419ef7-bd32-468d-a505-1179b31a2047 
+Jun 13 17:39:22.660 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:45:57.504 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jun 13 17:45:57.504 VM: VM Ghost created.
+Jun 13 17:45:57.519 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/david/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 13 17:45:57.523 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 13 17:45:57.525 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 13 17:45:57.529 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jun 13 17:45:57.537 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 13 17:45:57.541 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 13 17:45:58.424 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 13 17:45:58.425 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 13 17:45:58.584 VM: VM Ghost shutdown.
+Jun 13 17:45:58.585 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 13 17:45:58.585 VM: VM Ghost destroyed.
+Jun 13 17:45:58.586 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Jun 13 17:45:58.587 HYPERVISOR: exec_cmd: vm set_ghost_file R4 c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 13 17:45:58.588 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:45:58.589 HYPERVISOR: exec_cmd: vm start R4 
+Jun 13 17:56:14.442 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 17:56:14.450 HYPERVISOR: exec_cmd: vm stop R4 
+Jun 13 17:56:14.537 VM: VM R4 shutdown.
+Jun 13 17:56:14.539 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 13 18:00:06.772 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 18:00:06.793 HYPERVISOR: exec_cmd: vm start R4 
+Jun 13 18:02:10.736 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 18:02:10.742 HYPERVISOR: exec_cmd: vm stop R4 
+Jun 13 18:02:10.827 VM: VM R4 shutdown.
+Jun 13 18:02:10.828 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 13 18:02:12.952 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 18:02:12.962 HYPERVISOR: exec_cmd: vm start R4 
+Jun 13 18:48:56.011 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 13 18:49:38.238 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 13 18:49:43.407 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 18:49:43.412 HYPERVISOR: exec_cmd: vm stop R4 
+Jun 13 18:49:43.545 VM: VM R4 shutdown.
+Jun 13 18:49:43.546 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 13 18:49:45.270 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 18:49:45.276 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 13 18:49:45.284 HYPERVISOR: exec_cmd: vm delete R4 
+Jun 13 18:49:45.285 VM: VM R4 destroyed.
+Jun 13 18:49:45.291 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 18:49:45.528 HYPERVISOR: Stopped.
+Jun 13 18:49:45.528 GENERAL: reset done.
