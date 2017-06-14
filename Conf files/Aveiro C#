@@ -5,6 +5,7 @@ vlan 5
 exit
 conf t
 ip routing
+ipv6 unicast-routing
 in f1/2
 switchport mode trunk
 switchport trunk encapsulation dot1q
@@ -21,3 +22,17 @@ in vlan 5
 ip add 10.0.33.254 255.255.255.0
 ipv6 add 2002:A:A:21::254/64
 no sh
+
+in range f1/0 - 1
+switchport mode trunk
+switchport trunk encapsulation dot1q
+no sh
+
+conf t
+in range vlan 1 - 101
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+end
+end
+
+

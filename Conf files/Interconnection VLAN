@@ -1,0 +1,11 @@
+vlan database
+vlan 101
+exit 
+conf t
+in vlan 101
+ip add 10.101.0.254 255.255.255.0
+ipv6 add 2002:a:a:7700::254/64
+no sh
+end
+write
+

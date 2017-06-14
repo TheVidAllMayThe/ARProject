@@ -1,0 +1,28 @@
+vlan database
+vlan 1
+
+exit
+conf t
+ip routing
+in range f1/0 - 5
+switchport mode trunk
+switchport trunk encapsulation dot1q
+no sh
+in vlan 1
+ip add 10.0.0.249 255.255.255.0
+ipv6 add 2002:A:A:0::249/64
+no sh
+end
+
+conf t
+in range vlan 1 - 101
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+end
+
+conf t
+router ospf 1
+redistribute ospf 10 subnets
+end
+
+

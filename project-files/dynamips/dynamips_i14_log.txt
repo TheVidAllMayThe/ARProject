@@ -1,66 +1,19 @@
-Jun 13 17:06:37.550 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
-Jun 13 17:06:37.550 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60586.
-Jun 13 17:06:37.596 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 13 17:06:37.600 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
-Jun 13 17:06:37.600 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
-Jun 13 17:06:37.604 HYPERVISOR: exec_cmd: vm create R2 14 c7200 
-Jun 13 17:06:37.607 VM: VM R2 created.
-Jun 13 17:06:37.613 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5013 
-Jun 13 17:06:37.616 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
-Jun 13 17:06:37.620 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 17:06:37.623 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
-Jun 13 17:06:37.630 HYPERVISOR: exec_cmd: vm set_ios R2 /home/david/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
-Jun 13 17:06:37.643 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 17:06:37.698 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x601712a8 
-Jun 13 17:06:37.715 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
-Jun 13 17:06:37.717 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
-Jun 13 17:06:37.718 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca0e.0b07.0000 
-Jun 13 17:06:37.721 HYPERVISOR: exec_cmd: vm set_ram R2 512 
-Jun 13 17:06:37.722 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 17:06:37.726 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-2FE-TX 
-Jun 13 17:06:37.732 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 17:06:37.736 HYPERVISOR: exec_cmd: vm slot_remove_binding R2 0 0 
-Jun 13 17:06:37.739 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 17:06:37.758 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-2FE 
-Jun 13 17:06:37.779 HYPERVISOR: exec_cmd: vm set_config R2 configs/i14_startup-config.cfg 
-Jun 13 17:06:38.821 HYPERVISOR: exec_cmd: nio create_udp udp-331d07b0-af83-4570-a50c-85f62eb54504 10037 127.0.0.1 10036 
-Jun 13 17:06:38.822 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-331d07b0-af83-4570-a50c-85f62eb54504 
-Jun 13 17:06:38.825 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 17:06:38.846 HYPERVISOR: exec_cmd: nio create_udp udp-18839f4e-0cf1-4d22-a29b-daa5f5e060ca 10040 127.0.0.1 10038 
-Jun 13 17:06:38.847 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-18839f4e-0cf1-4d22-a29b-daa5f5e060ca 
-Jun 13 17:06:38.851 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 17:06:39.010 HYPERVISOR: exec_cmd: nio create_udp udp-1f26ae86-6d4a-4291-997c-2acdffc5b97a 10051 127.0.0.1 10050 
-Jun 13 17:06:39.016 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-1f26ae86-6d4a-4291-997c-2acdffc5b97a 
-Jun 13 17:06:39.021 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 17:10:56.024 HYPERVISOR: exec_cmd: nio create_udp udp-db52bd3a-c310-4d46-935d-88b9bdab5606 10063 127.0.0.1 10062 
-Jun 13 17:10:56.025 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 1 udp-db52bd3a-c310-4d46-935d-88b9bdab5606 
-Jun 13 17:10:56.026 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 17:45:58.804 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
-Jun 13 17:45:58.810 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
-Jun 13 17:45:58.815 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 17:45:58.818 HYPERVISOR: exec_cmd: vm start R2 
-Jun 13 17:56:14.709 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 17:56:14.715 HYPERVISOR: exec_cmd: vm stop R2 
-Jun 13 17:56:14.854 VM: VM R2 shutdown.
-Jun 13 17:56:14.857 HYPERVISOR: exec_cmd: vm extract_config R2 
-Jun 13 18:00:07.013 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 18:00:07.016 HYPERVISOR: exec_cmd: vm start R2 
-Jun 13 18:02:10.888 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 18:02:10.889 HYPERVISOR: exec_cmd: vm stop R2 
-Jun 13 18:02:11.028 VM: VM R2 shutdown.
-Jun 13 18:02:11.029 HYPERVISOR: exec_cmd: vm extract_config R2 
-Jun 13 18:02:13.190 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 18:02:13.192 HYPERVISOR: exec_cmd: vm start R2 
-Jun 13 18:48:56.028 HYPERVISOR: exec_cmd: vm extract_config R2 
-Jun 13 18:49:38.243 HYPERVISOR: exec_cmd: vm extract_config R2 
-Jun 13 18:49:43.601 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 18:49:43.604 HYPERVISOR: exec_cmd: vm stop R2 
-Jun 13 18:49:43.759 VM: VM R2 shutdown.
-Jun 13 18:49:43.761 HYPERVISOR: exec_cmd: vm extract_config R2 
-Jun 13 18:49:45.268 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 18:49:45.275 HYPERVISOR: exec_cmd: vm extract_config R2 
-Jun 13 18:49:45.282 HYPERVISOR: exec_cmd: vm delete R2 
-Jun 13 18:49:45.283 VM: VM R2 destroyed.
-Jun 13 18:49:45.290 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 13 18:49:45.401 HYPERVISOR: Stopped.
-Jun 13 18:49:45.401 GENERAL: reset done.
+Jun 14 16:33:36.386 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 14 16:33:36.386 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 44514.
+Jun 14 16:33:36.447 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 14 16:33:36.453 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 14 16:33:36.453 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 14 16:33:36.456 HYPERVISOR: exec_cmd: ethsw create Cats and porn 
+Jun 14 16:33:37.832 HYPERVISOR: exec_cmd: nio create_udp udp-24afca71-b99f-468d-b430-381c382d8f9b 10034 127.0.0.1 10035 
+Jun 14 16:33:37.840 HYPERVISOR: exec_cmd: ethsw add_nio Cats and porn udp-24afca71-b99f-468d-b430-381c382d8f9b 
+Jun 14 16:33:37.854 HYPERVISOR: exec_cmd: ethsw set_access_port Cats and porn udp-24afca71-b99f-468d-b430-381c382d8f9b 1 
+Jun 14 16:33:37.894 HYPERVISOR: exec_cmd: nio create_udp udp-3ea29a73-5779-4478-ad04-e87210854834 10039 127.0.0.1 10038 
+Jun 14 16:33:37.906 HYPERVISOR: exec_cmd: ethsw add_nio Cats and porn udp-3ea29a73-5779-4478-ad04-e87210854834 
+Jun 14 16:33:37.912 HYPERVISOR: exec_cmd: ethsw set_access_port Cats and porn udp-3ea29a73-5779-4478-ad04-e87210854834 1 
+Jun 14 16:33:38.156 HYPERVISOR: exec_cmd: nio create_udp udp-cff2f0d7-7326-4846-a2de-e9f2025fa329 10061 127.0.0.1 10060 
+Jun 14 16:33:38.161 HYPERVISOR: exec_cmd: ethsw add_nio Cats and porn udp-cff2f0d7-7326-4846-a2de-e9f2025fa329 
+Jun 14 16:33:38.174 HYPERVISOR: exec_cmd: ethsw set_access_port Cats and porn udp-cff2f0d7-7326-4846-a2de-e9f2025fa329 1 
+Jun 14 16:52:03.627 HYPERVISOR: exec_cmd: ethsw delete Cats and porn 
+Jun 14 16:52:03.672 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 14 16:52:03.722 HYPERVISOR: Stopped.
+Jun 14 16:52:03.722 GENERAL: reset done.

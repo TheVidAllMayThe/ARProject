@@ -1,63 +1,25 @@
-Jun 13 17:06:37.713 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
-Jun 13 17:06:37.713 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51432.
-Jun 13 17:06:37.780 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 13 17:06:37.789 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
-Jun 13 17:06:37.789 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
-Jun 13 17:06:37.809 HYPERVISOR: exec_cmd: vm create ISP 17 c7200 
-Jun 13 17:06:37.810 VM: VM ISP created.
-Jun 13 17:06:37.820 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP 5016 
-Jun 13 17:06:37.833 HYPERVISOR: exec_cmd: c7200 get_mac_addr ISP 
-Jun 13 17:06:37.841 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 17:06:37.843 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 0 0 C7200-IO-FE 
-Jun 13 17:06:37.847 HYPERVISOR: exec_cmd: vm set_ios ISP /home/david/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
-Jun 13 17:06:37.849 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 17:06:37.851 HYPERVISOR: exec_cmd: vm set_idle_pc ISP 0x601712a8 
-Jun 13 17:06:37.853 HYPERVISOR: exec_cmd: vm set_disk0 ISP 0 
-Jun 13 17:06:37.854 HYPERVISOR: exec_cmd: vm set_nvram ISP 512 
-Jun 13 17:06:37.861 HYPERVISOR: exec_cmd: c7200 set_mac_addr ISP ca11.0dd2.0000 
-Jun 13 17:06:37.868 HYPERVISOR: exec_cmd: vm set_ram ISP 512 
-Jun 13 17:06:37.877 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 17:06:37.880 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 1 0 PA-2FE-TX 
-Jun 13 17:06:37.882 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 17:06:37.883 HYPERVISOR: exec_cmd: vm slot_remove_binding ISP 0 0 
-Jun 13 17:06:37.885 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 17:06:37.886 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 0 0 C7200-IO-2FE 
-Jun 13 17:06:37.888 HYPERVISOR: exec_cmd: vm set_config ISP configs/i17_startup-config.cfg 
-Jun 13 17:06:38.974 HYPERVISOR: exec_cmd: nio create_udp udp-88bc7a5b-0577-4325-a381-40617a99da80 10048 127.0.0.1 10049 
-Jun 13 17:06:38.981 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 0 0 udp-88bc7a5b-0577-4325-a381-40617a99da80 
-Jun 13 17:06:38.982 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 17:06:38.992 HYPERVISOR: exec_cmd: nio create_udp udp-d64b6cde-53c2-438f-8ea0-898f05dae138 10050 127.0.0.1 10051 
-Jun 13 17:06:39.003 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 0 1 udp-d64b6cde-53c2-438f-8ea0-898f05dae138 
-Jun 13 17:06:39.015 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 17:06:39.037 HYPERVISOR: exec_cmd: nio create_udp udp-955fa194-1d41-41bf-8564-c5302eaa1ce2 10053 127.0.0.1 10052 
-Jun 13 17:06:39.043 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 1 0 udp-955fa194-1d41-41bf-8564-c5302eaa1ce2 
-Jun 13 17:06:39.049 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 17:45:58.592 HYPERVISOR: exec_cmd: vm set_ghost_status ISP 2 
-Jun 13 17:45:58.593 HYPERVISOR: exec_cmd: vm set_ghost_file ISP c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
-Jun 13 17:45:58.594 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 17:45:58.595 HYPERVISOR: exec_cmd: vm start ISP 
-Jun 13 17:56:14.586 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 17:56:14.591 HYPERVISOR: exec_cmd: vm stop ISP 
-Jun 13 17:56:14.707 VM: VM ISP shutdown.
-Jun 13 17:56:14.710 HYPERVISOR: exec_cmd: vm extract_config ISP 
-Jun 13 18:00:06.845 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 18:00:06.852 HYPERVISOR: exec_cmd: vm start ISP 
-Jun 13 18:02:10.839 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 18:02:10.839 HYPERVISOR: exec_cmd: vm stop ISP 
-Jun 13 18:02:10.951 VM: VM ISP shutdown.
-Jun 13 18:02:10.952 HYPERVISOR: exec_cmd: vm extract_config ISP 
-Jun 13 18:02:13.022 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 18:02:13.032 HYPERVISOR: exec_cmd: vm start ISP 
-Jun 13 18:48:55.990 HYPERVISOR: exec_cmd: vm extract_config ISP 
-Jun 13 18:49:38.231 HYPERVISOR: exec_cmd: vm extract_config ISP 
-Jun 13 18:49:43.589 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 18:49:43.593 HYPERVISOR: exec_cmd: vm stop ISP 
-Jun 13 18:49:43.752 VM: VM ISP shutdown.
-Jun 13 18:49:43.753 HYPERVISOR: exec_cmd: vm extract_config ISP 
-Jun 13 18:49:45.269 HYPERVISOR: exec_cmd: vm get_status ISP 
-Jun 13 18:49:45.276 HYPERVISOR: exec_cmd: vm extract_config ISP 
-Jun 13 18:49:45.283 HYPERVISOR: exec_cmd: vm delete ISP 
-Jun 13 18:49:45.284 VM: VM ISP destroyed.
-Jun 13 18:49:45.290 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 13 18:49:45.621 HYPERVISOR: Stopped.
-Jun 13 18:49:45.622 GENERAL: reset done.
+Jun 14 16:33:36.496 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 14 16:33:36.496 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42337.
+Jun 14 16:33:36.563 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 14 16:33:36.568 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 14 16:33:36.568 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 14 16:33:36.570 HYPERVISOR: exec_cmd: ethsw create SW3 
+Jun 14 16:33:37.967 HYPERVISOR: exec_cmd: nio create_udp udp-bd46f0d7-d06f-4805-8902-3df8be230add 10045 127.0.0.1 10044 
+Jun 14 16:33:37.970 HYPERVISOR: exec_cmd: ethsw add_nio SW3 udp-bd46f0d7-d06f-4805-8902-3df8be230add 
+Jun 14 16:33:37.986 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW3 udp-bd46f0d7-d06f-4805-8902-3df8be230add 1 
+Jun 14 16:33:38.002 HYPERVISOR: exec_cmd: nio create_udp udp-12057eb5-304f-4fea-9daa-1a737e8f7208 10047 127.0.0.1 10046 
+Jun 14 16:33:38.007 HYPERVISOR: exec_cmd: ethsw add_nio SW3 udp-12057eb5-304f-4fea-9daa-1a737e8f7208 
+Jun 14 16:33:38.032 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW3 udp-12057eb5-304f-4fea-9daa-1a737e8f7208 1 
+Jun 14 16:33:38.039 HYPERVISOR: exec_cmd: nio create_udp udp-d3fef547-1bc9-47aa-aad0-2c13caf01339 10048 127.0.0.1 10049 
+Jun 14 16:33:38.041 HYPERVISOR: exec_cmd: ethsw add_nio SW3 udp-d3fef547-1bc9-47aa-aad0-2c13caf01339 
+Jun 14 16:33:38.042 HYPERVISOR: exec_cmd: ethsw set_access_port SW3 udp-d3fef547-1bc9-47aa-aad0-2c13caf01339 2 
+Jun 14 16:33:38.052 HYPERVISOR: exec_cmd: nio create_udp udp-71434cb3-6b97-44e8-9ae5-c3582f8d1088 10055 127.0.0.1 10053 
+Jun 14 16:33:38.060 HYPERVISOR: exec_cmd: ethsw add_nio SW3 udp-71434cb3-6b97-44e8-9ae5-c3582f8d1088 
+Jun 14 16:33:38.069 HYPERVISOR: exec_cmd: ethsw set_access_port SW3 udp-71434cb3-6b97-44e8-9ae5-c3582f8d1088 1 
+Jun 14 16:33:38.240 HYPERVISOR: exec_cmd: nio create_udp udp-8cb61414-36d7-4039-a61d-72b7849ca9cd 10069 127.0.0.1 10068 
+Jun 14 16:33:38.255 HYPERVISOR: exec_cmd: ethsw add_nio SW3 udp-8cb61414-36d7-4039-a61d-72b7849ca9cd 
+Jun 14 16:33:38.268 HYPERVISOR: exec_cmd: ethsw set_access_port SW3 udp-8cb61414-36d7-4039-a61d-72b7849ca9cd 4 
+Jun 14 16:52:03.626 HYPERVISOR: exec_cmd: ethsw delete SW3 
+Jun 14 16:52:03.719 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 14 16:52:03.847 HYPERVISOR: Stopped.
+Jun 14 16:52:03.847 GENERAL: reset done.

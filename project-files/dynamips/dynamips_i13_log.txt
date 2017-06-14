@@ -1,66 +1,50 @@
-Jun 13 17:06:37.482 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
-Jun 13 17:06:37.482 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 37615.
-Jun 13 17:06:37.584 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 13 17:06:37.590 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
-Jun 13 17:06:37.590 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
-Jun 13 17:06:37.597 HYPERVISOR: exec_cmd: vm create R1 13 c7200 
-Jun 13 17:06:37.599 VM: VM R1 created.
-Jun 13 17:06:37.603 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5012 
-Jun 13 17:06:37.605 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
-Jun 13 17:06:37.610 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 17:06:37.615 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
-Jun 13 17:06:37.618 HYPERVISOR: exec_cmd: vm set_ios R1 /home/david/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
-Jun 13 17:06:37.621 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 17:06:37.626 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x601712a8 
-Jun 13 17:06:37.632 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
-Jun 13 17:06:37.645 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
-Jun 13 17:06:37.701 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca0d.0ae4.0000 
-Jun 13 17:06:37.716 HYPERVISOR: exec_cmd: vm set_ram R1 512 
-Jun 13 17:06:37.717 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 17:06:37.719 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
-Jun 13 17:06:37.721 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 17:06:37.723 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
-Jun 13 17:06:37.727 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 17:06:37.732 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
-Jun 13 17:06:37.737 HYPERVISOR: exec_cmd: vm set_config R1 configs/i13_startup-config.cfg 
-Jun 13 17:06:38.762 HYPERVISOR: exec_cmd: nio create_udp udp-837b2f52-c1e2-4111-b6ae-b748e2afcc8e 10032 127.0.0.1 10033 
-Jun 13 17:06:38.763 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-837b2f52-c1e2-4111-b6ae-b748e2afcc8e 
-Jun 13 17:06:38.764 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 17:06:38.789 HYPERVISOR: exec_cmd: nio create_udp udp-85e0cddb-d82a-4270-85b4-27b0e380e4cc 10034 127.0.0.1 10035 
-Jun 13 17:06:38.797 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-85e0cddb-d82a-4270-85b4-27b0e380e4cc 
-Jun 13 17:06:38.798 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 17:06:38.980 HYPERVISOR: exec_cmd: nio create_udp udp-be754823-ba91-4dbf-8913-4a58a565e40d 10049 127.0.0.1 10048 
-Jun 13 17:06:38.981 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-be754823-ba91-4dbf-8913-4a58a565e40d 
-Jun 13 17:06:38.982 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 17:10:52.797 HYPERVISOR: exec_cmd: nio create_udp udp-49123b33-dd29-46fc-ae26-946c4c18be83 10061 127.0.0.1 10060 
-Jun 13 17:10:52.798 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 1 udp-49123b33-dd29-46fc-ae26-946c4c18be83 
-Jun 13 17:10:52.800 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 17:45:58.816 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
-Jun 13 17:45:58.820 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
-Jun 13 17:45:58.821 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 17:45:58.828 HYPERVISOR: exec_cmd: vm start R1 
-Jun 13 17:56:14.720 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 17:56:14.727 HYPERVISOR: exec_cmd: vm stop R1 
-Jun 13 17:56:14.865 VM: VM R1 shutdown.
-Jun 13 17:56:14.873 HYPERVISOR: exec_cmd: vm extract_config R1 
-Jun 13 18:00:07.044 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 18:00:07.047 HYPERVISOR: exec_cmd: vm start R1 
-Jun 13 18:02:10.949 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 18:02:10.951 HYPERVISOR: exec_cmd: vm stop R1 
-Jun 13 18:02:11.096 VM: VM R1 shutdown.
-Jun 13 18:02:11.097 HYPERVISOR: exec_cmd: vm extract_config R1 
-Jun 13 18:02:13.216 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 18:02:13.218 HYPERVISOR: exec_cmd: vm start R1 
-Jun 13 18:48:55.984 HYPERVISOR: exec_cmd: vm extract_config R1 
-Jun 13 18:49:38.228 HYPERVISOR: exec_cmd: vm extract_config R1 
-Jun 13 18:49:43.621 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 18:49:43.623 HYPERVISOR: exec_cmd: vm stop R1 
-Jun 13 18:49:43.764 VM: VM R1 shutdown.
-Jun 13 18:49:43.766 HYPERVISOR: exec_cmd: vm extract_config R1 
-Jun 13 18:49:45.271 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 13 18:49:45.277 HYPERVISOR: exec_cmd: vm extract_config R1 
-Jun 13 18:49:45.285 HYPERVISOR: exec_cmd: vm delete R1 
-Jun 13 18:49:45.286 VM: VM R1 destroyed.
-Jun 13 18:49:45.291 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 13 18:49:45.386 HYPERVISOR: Stopped.
-Jun 13 18:49:45.386 GENERAL: reset done.
+Jun 14 16:33:36.323 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 14 16:33:36.323 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41102.
+Jun 14 16:33:36.351 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 14 16:33:36.354 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 14 16:33:36.354 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 14 16:33:36.356 HYPERVISOR: exec_cmd: vm create ISPUS 18 c7200 
+Jun 14 16:33:36.356 VM: VM ISPUS created.
+Jun 14 16:33:36.358 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISPUS 5017 
+Jun 14 16:33:36.360 HYPERVISOR: exec_cmd: c7200 get_mac_addr ISPUS 
+Jun 14 16:33:36.363 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 14 16:33:36.370 HYPERVISOR: exec_cmd: vm slot_add_binding ISPUS 0 0 C7200-IO-FE 
+Jun 14 16:33:36.389 HYPERVISOR: exec_cmd: vm set_nvram ISPUS 512 
+Jun 14 16:33:36.396 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 14 16:33:36.415 HYPERVISOR: exec_cmd: vm set_idle_pc ISPUS 0x601712a8 
+Jun 14 16:33:36.421 HYPERVISOR: exec_cmd: vm set_ios ISPUS /home/david/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 14 16:33:36.423 HYPERVISOR: exec_cmd: vm set_ram ISPUS 512 
+Jun 14 16:33:36.431 HYPERVISOR: exec_cmd: c7200 set_mac_addr ISPUS ca12.0e21.0000 
+Jun 14 16:33:36.446 HYPERVISOR: exec_cmd: vm set_disk0 ISPUS 0 
+Jun 14 16:33:36.452 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 14 16:33:36.455 HYPERVISOR: exec_cmd: vm slot_add_binding ISPUS 1 0 PA-2FE-TX 
+Jun 14 16:33:36.457 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 14 16:33:36.462 HYPERVISOR: exec_cmd: vm slot_remove_binding ISPUS 0 0 
+Jun 14 16:33:36.478 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 14 16:33:36.497 HYPERVISOR: exec_cmd: vm slot_add_binding ISPUS 0 0 C7200-IO-2FE 
+Jun 14 16:33:36.499 HYPERVISOR: exec_cmd: vm set_config ISPUS configs/i18_startup-config.cfg 
+Jun 14 16:33:37.840 HYPERVISOR: exec_cmd: nio create_udp udp-2bc1b38b-10bc-4513-8dd9-c1685dd102b1 10036 127.0.0.1 10037 
+Jun 14 16:33:37.841 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISPUS 0 0 udp-2bc1b38b-10bc-4513-8dd9-c1685dd102b1 
+Jun 14 16:33:37.842 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 14 16:33:37.869 HYPERVISOR: exec_cmd: nio create_udp udp-6751da50-61a8-4ac2-8985-64f554a88295 10038 127.0.0.1 10039 
+Jun 14 16:33:37.870 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISPUS 1 0 udp-6751da50-61a8-4ac2-8985-64f554a88295 
+Jun 14 16:33:37.871 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 14 16:33:38.363 HYPERVISOR: exec_cmd: nio create_udp udp-980a408d-f6ba-437b-ab1e-59720358a141 10076 127.0.0.1 10077 
+Jun 14 16:33:38.367 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISPUS 0 1 udp-980a408d-f6ba-437b-ab1e-59720358a141 
+Jun 14 16:33:38.371 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 14 16:33:41.965 HYPERVISOR: exec_cmd: vm set_ghost_status ISPUS 2 
+Jun 14 16:33:41.967 HYPERVISOR: exec_cmd: vm set_ghost_file ISPUS c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 14 16:33:41.967 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 14 16:33:41.968 HYPERVISOR: exec_cmd: vm start ISPUS 
+Jun 14 16:51:59.498 HYPERVISOR: exec_cmd: vm extract_config ISPUS 
+Jun 14 16:52:02.034 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 14 16:52:02.036 HYPERVISOR: exec_cmd: vm stop ISPUS 
+Jun 14 16:52:02.238 VM: VM ISPUS shutdown.
+Jun 14 16:52:02.244 HYPERVISOR: exec_cmd: vm extract_config ISPUS 
+Jun 14 16:52:04.002 HYPERVISOR: exec_cmd: vm get_status ISPUS 
+Jun 14 16:52:04.011 HYPERVISOR: exec_cmd: vm extract_config ISPUS 
+Jun 14 16:52:04.018 HYPERVISOR: exec_cmd: vm delete ISPUS 
+Jun 14 16:52:04.019 VM: VM ISPUS destroyed.
+Jun 14 16:52:04.023 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 14 16:52:04.142 HYPERVISOR: Stopped.
+Jun 14 16:52:04.142 GENERAL: reset done.

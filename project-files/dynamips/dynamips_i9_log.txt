@@ -1,38 +1,53 @@
-Jun 13 17:06:37.246 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
-Jun 13 17:06:37.246 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 43495.
-Jun 13 17:06:37.300 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 13 17:06:37.304 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
-Jun 13 17:06:37.304 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
-Jun 13 17:06:37.306 HYPERVISOR: exec_cmd: vm create Chicago01 9 c3745 
-Jun 13 17:06:37.307 VM: VM Chicago01 created.
-Jun 13 17:06:37.313 HYPERVISOR: exec_cmd: vm set_con_tcp_port Chicago01 5008 
-Jun 13 17:06:37.317 HYPERVISOR: exec_cmd: c3745 get_mac_addr Chicago01 
-Jun 13 17:06:37.321 HYPERVISOR: exec_cmd: vm set_ios Chicago01 /home/david/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
-Jun 13 17:06:37.327 HYPERVISOR: exec_cmd: vm get_status Chicago01 
-Jun 13 17:06:37.332 HYPERVISOR: exec_cmd: vm set_idle_pc Chicago01 0x60b22a18 
-Jun 13 17:06:37.334 HYPERVISOR: exec_cmd: vm set_disk0 Chicago01 1 
-Jun 13 17:06:37.350 HYPERVISOR: exec_cmd: vm set_nvram Chicago01 256 
-Jun 13 17:06:37.412 HYPERVISOR: exec_cmd: c3745 set_mac_addr Chicago01 c409.39a8.0000 
-Jun 13 17:06:37.430 HYPERVISOR: exec_cmd: vm set_ram Chicago01 256 
-Jun 13 17:06:37.449 HYPERVISOR: exec_cmd: vm get_status Chicago01 
-Jun 13 17:06:37.486 HYPERVISOR: exec_cmd: vm slot_add_binding Chicago01 1 0 NM-16ESW 
-Jun 13 17:06:37.489 HYPERVISOR: exec_cmd: vm set_config Chicago01 configs/i9_startup-config.cfg 
-Jun 13 17:06:38.664 HYPERVISOR: exec_cmd: nio create_udp udp-7b4f0bd7-7a3c-494a-9079-d3e01e2d5a19 10024 127.0.0.1 10025 
-Jun 13 17:06:38.669 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago01 1 0 udp-7b4f0bd7-7a3c-494a-9079-d3e01e2d5a19 
-Jun 13 17:06:38.676 HYPERVISOR: exec_cmd: vm get_status Chicago01 
-Jun 13 17:06:38.719 HYPERVISOR: exec_cmd: nio create_udp udp-2de399c3-d1a2-4bfb-9457-490533c09c8b 10028 127.0.0.1 10029 
-Jun 13 17:06:38.727 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago01 1 1 udp-2de399c3-d1a2-4bfb-9457-490533c09c8b 
-Jun 13 17:06:38.728 HYPERVISOR: exec_cmd: vm get_status Chicago01 
-Jun 13 17:38:10.470 HYPERVISOR: exec_cmd: vm get_status Chicago01 
-Jun 13 17:38:10.473 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Chicago01 1 1 
-Jun 13 17:38:10.475 HYPERVISOR: exec_cmd: nio delete udp-2de399c3-d1a2-4bfb-9457-490533c09c8b 
-Jun 13 17:38:20.028 HYPERVISOR: exec_cmd: vm get_status Chicago01 
-Jun 13 17:38:20.029 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Chicago01 1 0 
-Jun 13 17:38:20.030 HYPERVISOR: exec_cmd: nio delete udp-7b4f0bd7-7a3c-494a-9079-d3e01e2d5a19 
-Jun 13 17:38:20.046 HYPERVISOR: exec_cmd: vm get_status Chicago01 
-Jun 13 17:38:20.048 HYPERVISOR: exec_cmd: vm extract_config Chicago01 
-Jun 13 17:38:20.051 HYPERVISOR: exec_cmd: vm delete Chicago01 
-Jun 13 17:38:20.051 VM: VM Chicago01 destroyed.
-Jun 13 17:38:20.052 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 13 17:38:20.546 HYPERVISOR: Stopped.
-Jun 13 17:38:20.546 GENERAL: reset done.
+Jun 14 16:33:36.205 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 14 16:33:36.206 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50291.
+Jun 14 16:33:36.261 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 14 16:33:36.265 HYPERVISOR: exec_cmd: hypervisor working_dir /home/david/GNS3/projects/ARProject/project-files/dynamips 
+Jun 14 16:33:36.265 GENERAL: working_dir=/home/david/GNS3/projects/ARProject/project-files/dynamips
+Jun 14 16:33:36.267 HYPERVISOR: exec_cmd: vm create R1 13 c7200 
+Jun 14 16:33:36.267 VM: VM R1 created.
+Jun 14 16:33:36.270 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5012 
+Jun 14 16:33:36.272 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Jun 14 16:33:36.282 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 14 16:33:36.296 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Jun 14 16:33:36.309 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Jun 14 16:33:36.325 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 14 16:33:36.328 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x601712a8 
+Jun 14 16:33:36.333 HYPERVISOR: exec_cmd: vm set_ios R1 /home/david/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 14 16:33:36.336 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Jun 14 16:33:36.338 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca0d.0ae4.0000 
+Jun 14 16:33:36.342 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Jun 14 16:33:36.346 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 14 16:33:36.350 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Jun 14 16:33:36.352 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 14 16:33:36.354 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
+Jun 14 16:33:36.356 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 14 16:33:36.358 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
+Jun 14 16:33:36.361 HYPERVISOR: exec_cmd: vm set_config R1 configs/i13_startup-config.cfg 
+Jun 14 16:33:37.673 HYPERVISOR: exec_cmd: nio create_udp udp-e4c51d5a-0ef3-485b-a530-d995d4265d3d 10022 127.0.0.1 10024 
+Jun 14 16:33:37.681 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-e4c51d5a-0ef3-485b-a530-d995d4265d3d 
+Jun 14 16:33:37.685 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 14 16:33:37.698 HYPERVISOR: exec_cmd: nio create_udp udp-bb0d741f-6675-4b4d-b4e1-40b55743f773 10023 127.0.0.1 10025 
+Jun 14 16:33:37.706 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-bb0d741f-6675-4b4d-b4e1-40b55743f773 
+Jun 14 16:33:37.710 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 14 16:33:37.774 HYPERVISOR: exec_cmd: nio create_udp udp-19d15635-ccc5-4f41-9f00-8e0ada49b557 10031 127.0.0.1 10030 
+Jun 14 16:33:37.776 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-19d15635-ccc5-4f41-9f00-8e0ada49b557 
+Jun 14 16:33:37.782 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 14 16:33:38.101 HYPERVISOR: exec_cmd: nio create_udp udp-84a07e72-8a94-46a3-b11c-3096d2717d69 10056 127.0.0.1 10057 
+Jun 14 16:33:38.105 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 1 udp-84a07e72-8a94-46a3-b11c-3096d2717d69 
+Jun 14 16:33:38.106 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 14 16:33:42.188 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Jun 14 16:33:42.191 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 14 16:33:42.192 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 14 16:33:42.193 HYPERVISOR: exec_cmd: vm start R1 
+Jun 14 16:51:59.518 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jun 14 16:52:02.208 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 14 16:52:02.213 HYPERVISOR: exec_cmd: vm stop R1 
+Jun 14 16:52:02.442 VM: VM R1 shutdown.
+Jun 14 16:52:02.445 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jun 14 16:52:03.998 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 14 16:52:04.008 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jun 14 16:52:04.016 HYPERVISOR: exec_cmd: vm delete R1 
+Jun 14 16:52:04.017 VM: VM R1 destroyed.
+Jun 14 16:52:04.022 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 14 16:52:04.065 HYPERVISOR: Stopped.
+Jun 14 16:52:04.065 GENERAL: reset done.
